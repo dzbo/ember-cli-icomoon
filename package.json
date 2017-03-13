@@ -45,6 +45,7 @@
     "git-utils": "^5.0.0",
     "icomoon-build": "^0.2.8",
     "loader.js": "^4.0.10",
+    "merge": "^1.2.0",
     "replace": "^0.3.0",
     "wait.for": "^0.6.6"
   },
