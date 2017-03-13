@@ -1,27 +1,31 @@
 # ember-cli-icomoon
 
-This README outlines the details of collaborating on this Ember addon.
+Ember addon that download, extract and copy [Icomoon](https://icomoon.io) files from
+`Project.json` file. Addon is basically wrapper for [icomoon-build](https://www.npmjs.com/package/icomoon-build) npm package.
 
-## Installation
+## Configuration
 
-* `git clone <repository-url>` this repository
-* `cd ember-cli-icomoon`
-* `npm install`
-* `bower install`
+Add configuration to `ember-cli-build.js`
 
-## Running
+```
+var app = new EmberAddon(defaults, {
+  // Add options here
 
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
+  icomoon: {
+    projectFile: 'Project.json',
+    styleOutputFile: 'app/styles/vendor/icomoon/style.css',
+    fontsOutputFolder: 'public/fonts'
+  }
+});
+```
 
-## Running Tests
+* `projectFile` - path to project file from Icomoon
+* `styleOutputFile` - path where style file should be placed
+* `fontsOutputFolder` - folder where font files should be placed
 
-* `npm test` (Runs `ember try:each` to test your addon against multiple Ember versions)
-* `ember test`
-* `ember test --server`
+## Usage
 
-## Building
-
-* `ember build`
-
-For more information on using ember-cli, visit [https://ember-cli.com/](https://ember-cli.com/).
+After setting configuration you are done. Icomoon files will be
+pulled each time you start project build. Addon will check if project
+file has dirty git status to ensure files are generated only
+when necessary.
