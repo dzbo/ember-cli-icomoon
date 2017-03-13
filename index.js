@@ -33,8 +33,8 @@ module.exports = {
       return;
     }
 
-    if (repo.isPathNew([options.styleOutputFile]) ||
-        repo.isPathModified([options.styleOutputFile])) {
+    if (repo.isPathNew([options.projectFile]) ||
+        repo.isPathModified([options.projectFile])) {
       IcomoonBuild(cmd, function() {
         replace({
           regex: "fonts/icomoon",
