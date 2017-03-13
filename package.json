@@ -1,17 +1,17 @@
 {
   "name": "ember-cli-icomoon",
-  "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "version": "0.1.0",
+  "description": "Generate Icomoon font files",
   "keywords": [
     "ember-addon"
   ],
   "license": "MIT",
-  "author": "",
+  "author": "Dominik Zborowski",
   "directories": {
     "doc": "doc",
     "test": "tests"
   },
-  "repository": "",
+  "repository": "git@github.com:dzbo/ember-cli-icomoon.git",
   "scripts": {
     "build": "ember build",
     "start": "ember server",
