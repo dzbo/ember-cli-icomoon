@@ -3,6 +3,15 @@
 Ember addon that download, extract and copy [Icomoon](https://icomoon.io) files from
 `Project.json` file. Addon is basically wrapper for [icomoon-build](https://www.npmjs.com/package/icomoon-build) npm package.
 
+## Installation
+
+```
+npm install ember-cli-icomoon --save-dev
+```
+
+After adding addon to your project go to Icomoon web app and download
+your `Project.json` file.
+
 ## Configuration
 
 Add configuration to `ember-cli-build.js`
